@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" app clipped hide-overlay >
+    <v-navigation-drawer v-model="drawer" app :mini-variant="mini" clipped permanent >
       <v-list dense>
         <v-list-item link>
           <v-list-item-action>
@@ -18,6 +18,16 @@
             <v-list-item-title>Settings</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+              <v-list dense>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-view-dashboard</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Dashboard</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
       </v-list>
     </v-navigation-drawer>
 
